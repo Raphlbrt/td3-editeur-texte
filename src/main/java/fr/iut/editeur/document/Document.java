@@ -36,6 +36,8 @@ public class Document {
         String partieDroite = texte.substring(fin);
         partie = partie.toUpperCase();
         texte = partieGauche + partie + partieDroite;
-
+    }
+    public void effacer(int debut, int fin) {
+        remplacer(debut,fin,"");
     }
 }
